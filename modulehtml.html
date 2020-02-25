@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- meta tags -->
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>NewsLetter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body class="container-fluid bg-dark text-light">
+<header class="container-fluid">
+  <!--  mise place de ma nav bar en position fixed-top pour qu'elle reste en haut de ma page-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#00a89c;" >
+        <a class="navbar-brand" href="index.html">Newsletter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbars">
+            <ul class="navbar-nav mr-auto">
+               <!-- Je place mes items en active ou nom selon mon besoin de mise en évidence ou non-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Les actus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modulehtml.html">Module HTML</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   <!-- Je place mon logo et mon titre dans une div pour eviter que ma navbar morde dessus-->
+    <div class="row mt-4 pt-5 mb-2">
+        <a class="col-lg-5 col-md-6 col-sm-12 text-lg-left text-md-left text-sm-center text-xm-center" href="https://goopics.net/i/1yorO"><img src="https://i.goopics.net/1yorO.png" width="300"  class="rounded  mt-2" alt="image"></a>
+        <span class="col-lg-7 col-md-6 col-sm-12 p-2 h1 text-lg-right text-md-right text-sm-center text-xm-center ">Titre Pro Développeur Web et Web Mobile</span>
+    </div>
+</header>
+
+<section class=" row mt-5 text-dark">
+  <!--  Mise en place d'une card pour ma photo et son descriptif pour faciliter la mise en place et le positionnement-->
+    <div class="card p-0" >
+        <div class="row no-gutters p-0">
+            <div class="col-lg-4">
+                <a href="https://goopics.net/i/rGY07"><img src="https://i.goopics.net/rGY07.jpg" class="card-img w-100 h-100" alt="Image"></a>
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body">
+                    <h5 class="card-title">Le module HTML</h5>
+                    <p class="card-text">Savoir mettre en place le squelette d'une page HTML</p>
+                    <p class="card-text">Savoir utiliser les balises Html et le découpage d'une page Web</p>
+                    <p class="card-text">Apprendre le positionnement d'une page web en alliant Html et CSS</p>
+                    <p class="card-text">Utiliser le Framework Bootstrap optimiser son code Html</p>
+                    <a href="documents/reac.pdf">Cliquer pour consulter le documents officiel.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- J'ajoute mon tableau en boostrap pour la mise en forme et les scope sur les titre pour mettre en evidence -->
+    <table class="table text-light mt-5 offset-2 col-lg-8  table-bordered ">
+        <caption>Détails des modules à connaitre</caption>
+        <thead>
+        <tr>
+            <th scope="col">Fiche</th>
+            <th scope="col">Activités types</th>
+            <th scope="col">Compétences professionnelles</th>
+        </tr>
+        </thead>
+        <tbody >
+        <tr>
+            <!--j'utilise un rospan pour coller mes lignes entre elles-->
+            <!-- Je n'ai as ajouté les heures de formations car pas trouvées-->
+            <th scope="row" rowspan="4">1</th>
+            <td rowspan="4">Développer la partie front-end d’une application web ou web   mobile   en   intégrant   les   recommandations   de sécurité</td>
+            <td>Maquetter une Application</td>
+        </tr>
+        <tr>
+            <td>Réaliser   une interface   utilisateur   web   statique   et adaptable</td>
+        </tr>
+        <tr>
+            <td>Développer une interface utilisateur web dynamique</td>
+        </tr>
+        <tr>
+            <td>Réaliser  une interface  utilisateur  avec  une  solution  de gestion de contenu ou e-commerce </td>
+        </tr>
+        <tr>
+            <th scope="row" rowspan="4">2</th>
+            <td rowspan="4">Développer  la partie  back-end  d’une  application  web ou  web  mobile  en  intégrant  les  recommandations  de sécurité</td>
+            <td>Créer une base de données </td>
+        </tr>
+        <tr>
+            <td>Développer les composants d’accès aux données </td>
+        </tr>
+        <tr>
+            <td>Développer la partie back-end d’une application web ou web mobile</td>
+        </tr>
+        <tr>
+            <td>Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce</td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<!--Je replace mon footer de page et un lien pour revenir en haut de la page-->
+<footer class="row text-center text-light mt-5" style="background-color:#00a89c;">
+    <address class="col-lg-12">
+        <p>GRETA GRAND HAINAUT</p>
+        <p>817 rue Charles Bourseul</p>
+        <p>59508 DOUAI</p>
+    </address>
+    <p class="col-lg-12"><a href="#" class="text-decoration-none text-light">Haut de page</a></p>
+</footer>
+
+<!--inclure les scripts JS en fin de body pour améliorer le chargement des pages -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- meta tags -->
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>NewsLetter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body class="container-fluid bg-dark text-light">
+<header class="container-fluid">
+    <div class="row">
+        <!--  mise place de ma nav bar en position fixed-top pour qu'elle reste en haut de ma page-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#00a89c;" >
+            <a class="navbar-brand" href="#">Newsletter</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Je place mes items en active ou nom selon mon besoin de mise en évidence ou non-->
+            <div class="collapse navbar-collapse" id="navbars">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#actus">Les actus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modulehtml.html">Module HTML</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Je place mon logo et mon titre dans une div pour eviter que ma navbar morde dessus-->
+    <div class="row mt-5 pt-5 mb-2">
+        <a class="col-lg-4 col-md-6 col-sm-6 text-lg-left text-md-left text-sm-center " href="https://goopics.net/i/1yorO"><img src="https://i.goopics.net/1yorO.png" width="100%"  class="rounded  mt-2" alt="image"></a>
+        <h1 class="col-lg-7 col-md-6 col-sm-10 text-lg-right text-md-right text-sm-center align-self-center">Titre Professionnel Développeur Web et Web Mobile</h1>
+    </div>
+</header>
+<Section class="row mt-5" >
+    <!-- je place le jumbottron ici pour créer un bloc de texte avec un titre en evidence et le texte associé au titre en evidence sur ma page-->
+    <div class="jumbotron text-dark col-lg-12 col-sm-8" style="background-color:#00a89c;">
+        <div class="container-fluid ">
+            <h1 class="display-5">Qu'est-ce qu'un Développeur Web?</h1>
+            <p class="lead">Le développeur web et web mobile développe ou fait évoluer des applications orientées web, ou web mobile ou les deux à la fois, en respectant les normes et standards reconnus par la profession et en suivant l’état de l’art de la sécurité informatique à toutes les étapes. Ces applications sont destinées à des internautes ou des salariés d’entreprise.</p>
+        </div>
+    </div>
+</Section>
+<Section class="row mt-5" >
+    <!--J'utilise une card ici pour mettre ma notion de la semaine-->
+    <div class="card text-center text-dark col-lg-12 col-sm-8 ">
+        <div class="card-header">
+            <h2>Travaux de la semaine fait en formation.</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Création de CV.</h5>
+            <p class="card-text">Mise en ligne du CV par Git/Github.</p>
+            <a href="https://aureliemo.github.io/cv/" class="btn" style="background-color:#00a89c;">En voir plus</a>
+        </div>
+        <div class="card-footer text-muted">
+            Toujours en évolutions
+        </div>
+    </div>
+</section>
+<!--j'utilise des cards individuellement  car un groupe de card est moins gérable dans cette configuration de page avec un découpage de la formation en trois  (card-spinners et titre )-->
+<section class="row justify-content-center">
+    <h1  id="actus" class="col-lg-12 mt-5">Les actus, contenu de la première partie de la formation :</h1>
+    <div class="card text-light mt-5 " style="background-color:#00a89c;">
+        <a href="https://goopics.net/i/mVL4V"><img src="https://i.goopics.net/mVL4V.png" class="card-img" alt="image"></a>
+        <div class="card-footer text-center">
+            <h3 class="card-title">Front-End</h3>
+            <p class="card-text">Apprentissage des langages dit descriptifs.Exemple de réalisation de CV.</p>
+            <p class="card-text">Utilisation HTML 5(html-css-flexbox) dans la création de pages web et de Frameworks(Bootstrap).</p>
+        </div>
+    </div>
+    <div class="card text-light mt-5" style="background-color:#00a89c;">
+        <a href="https://goopics.net/i/QJlpx"><img src="https://i.goopics.net/QJlpx.png" class="card-img" alt="exemple"></a>
+        <div class="card-footer text-center">
+            <h3 class="card-title">Javascript</h3>
+            <p class="card-text">Apprentissage de l'algos.Exemple de réalisation du Jeu du nombre Mystère.</p>
+            <p class="card-text">Javascript, langage de programmation Web qui permet de rendre les sites dynamiques.</p>
+        </div>
+    </div>
+    <div class="card text-light mt-5" style="background-color:#00a89c;">
+        <a href="https://goopics.net/i/KJx01"><img src="https://i.goopics.net/KJx01.png" class="card-img" alt="exemple"></a>
+        <div class="card-footer text-center">
+            <h3 class="card-title">Maquettage</h3>
+            <p class="card-text">Prototypage.Exemple de maquettage sur Balsamique du site Uplay.</p>
+            <p class="card-text">Utilisation du prototypage pour concevoir un site à partir d'un cahier des charges.</p>
+        </div>
+    </div>
+    <div class="card text-light mt-5" style="background-color:#00a89c;">
+        <a href="https://goopics.net/i/EDQPK"><img src="https://i.goopics.net/EDQPK.png" class="card-img" alt="exemple"></a>
+        <div class="card-footer text-center">
+            <h3 class="card-title">UML</h3>
+            <p class="card-text">Apprentissage de la modélisation objet.Exemple de diagramme de cas d'utilisaton.</p>
+            <p class="card-text">Connaissance du formalisme des cas d'utilisation et du diagramme d'état.</p>
+        </div>
+    </div>
+</section>
+<Section class="row mt-5" >
+    <h1 class="col-lg-12 ">Contenu a venir de la deuxième partie de la formation :</h1>
+    <div class="col-lg-3 text-center mt-5">
+        <button class="btn w-100" style="background-color:#00a89c;" type="button" >
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <h2>Back-End</h2>
+        </button>
+    </div>
+    <div class="col-lg-3 text-center mt-5">
+        <!--j'indique bien a mon button qu'il occupe 100% de l'espace disponible pour qu'ils soient tous a la meme taille-->
+        <button class="btn w-100" style="background-color:#00a89c;" type="button" >
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <h2>CMS</h2>
+        </button>
+    </div>
+    <div class="col-lg-3 text-center mt-5">
+        <button class="btn w-100" style="background-color:#00a89c;" type="button" >
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <h2>Communication</h2>
+        </button>
+    </div>
+    <div class="col-lg-3 text-center mt-5">
+        <button class="btn w-100" style="background-color:#00a89c;" type="button" >
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <h2>Anglais</h2>
+        </button>
+    </div>
+</section>
+<Section class="row mt-5" >
+    <h1 class="col-lg-12 mt-5">En troisième partie, un stage de 8 semaines du 27 Avril au 23 Juillet 2020</h1>
+</section>
+
+<aside class="row mt-5">
+    <!--je fais un aside pour lister des entreprises qui recrutent et mettre des intitulés de poste recherchées par ses entreprises-->
+    <h1 class="col-lg-12 mt-5">Exemples d'entreprises qui recrutent :</h1>
+    <!--je place des media-divider mais on ne les vois pas je ne trouve pas la solutions pour les mettre en couleur, meme avec un style ça ne fonctionne pas-->
+    <div class="container-fluid">
+        <div class="media-divider" ></div>
+        <div class="row media mt-5">
+            <div class="col-md-7">
+                <h2 class="media-heading ">Stage Développeur Web Front-End.</h2>
+                <p class="lead">Lille,FR</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://goopics.net/i/5yDKd"><img src="https://i.goopics.net/5yDKd.png"  class="media-image w-100"  alt="entreprise" role="img"></a>
+            </div>
+        </div>
+        <div class="media-divider" ></div>
+        <div class="row media mt-5">
+            <div class="col-md-7">
+                <h2 class="media-heading">Développeur Java/Jee.</h2>
+                <p class="lead">Lille,FR.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://goopics.net/i/j85dj"><img src="https://i.goopics.net/j85dj.png"  class="media-image w-100" alt="entreprise"   role="img"></a>
+            </div>
+        </div>
+        <div class="media-divider" ></div>
+        <div class="row media mt-5">
+            <div class="col-md-7">
+                <h2 class="media-heading">Développeur Fullstack JS.</h2>
+                <p class="lead">Lille,FR.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://goopics.net/i/lkoPw"><img src="https://i.goopics.net/lkoPw.png"  class=" w-100"  alt="entreprise"  role="img"></a>
+            </div>
+        </div>
+        <div class="media-divider"></div>
+    </div>
+</aside>
+<!--Je place mon footer de page et un lien pour se desinscrire vers une autre page html-->
+<footer class="row text-center text-light mt-5" style="background-color:#00a89c;">
+    <address class="col-lg-12">
+        <p>GRETA GRAND HAINAUT</p>
+        <p>817 rue Charles Bourseul</p>
+        <p>59508 DOUAI</p>
+    </address>
+    <p class="col-lg-12"><a href="desinscription.html" class="text-decoration-none text-light">Désinscription</a></p>
+</footer>
+
+<!--inclure les scripts JS en fin de body pour améliorer le chargement des pages -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
